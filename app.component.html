@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-1 one">
+
+    </div>
+
+    <div class="col-8 two">
+        
+            <h2>My Employees</h2>
+            <p>Below Employees have the Id's , URL's and avatar_urls. Please search by the ID's</p>
+            <div class="table-responsive">
+
+            
+            <table class="table table-hover">
+          
+              <thead>
+                <tr class="table-primary">
+                  <th>ID</th>
+                  <th>LOGIN</th>
+                  <th>URL</th>
+                  <th>Avatar_ URL</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let user of Users">
+                <tr>
+                  <td>{{user.id}}</td>
+                  <td>{{user.login}}</td>
+                  <td>{{user.url}}</td>
+                  <td>{{user.avatar_url}}</td>
+                </tr>
+              </tbody>
+          
+            </table>
+          </div>
+            
+    </div>
+
+
+    <div class="col-2 three">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
